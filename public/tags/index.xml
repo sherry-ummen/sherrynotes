@@ -2,21 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Notes</title>
-    <link>https://www.sherrynotes.netlify.com/tags/</link>
+    <link>https://sherrynotes.netlify.com/tags/</link>
     <description>Recent content in Tags on Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 00:38:08 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 00:47:12 +0300</lastBuildDate>
     
-	<atom:link href="https://www.sherrynotes.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sherrynotes.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>algorithms, big-o, asymptotic, python</title>
-      <link>https://www.sherrynotes.netlify.com/tags/algorithms-big-o-asymptotic-python/</link>
+      <title>javascript</title>
+      <link>https://sherrynotes.netlify.com/tags/javascript/</link>
+      <pubDate>Sun, 28 Jul 2019 00:47:12 +0300</pubDate>
+      
+      <guid>https://sherrynotes.netlify.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://sherrynotes.netlify.com/tags/nodejs/</link>
+      <pubDate>Sun, 28 Jul 2019 00:47:12 +0300</pubDate>
+      
+      <guid>https://sherrynotes.netlify.com/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://sherrynotes.netlify.com/tags/vscode/</link>
+      <pubDate>Sun, 28 Jul 2019 00:47:12 +0300</pubDate>
+      
+      <guid>https://sherrynotes.netlify.com/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithms</title>
+      <link>https://sherrynotes.netlify.com/tags/algorithms/</link>
       <pubDate>Sun, 28 Jul 2019 00:38:08 +0300</pubDate>
       
-      <guid>https://www.sherrynotes.netlify.com/tags/algorithms-big-o-asymptotic-python/</guid>
+      <guid>https://sherrynotes.netlify.com/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>asymptotic</title>
+      <link>https://sherrynotes.netlify.com/tags/asymptotic/</link>
+      <pubDate>Sun, 28 Jul 2019 00:38:08 +0300</pubDate>
+      
+      <guid>https://sherrynotes.netlify.com/tags/asymptotic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>big-o</title>
+      <link>https://sherrynotes.netlify.com/tags/big-o/</link>
+      <pubDate>Sun, 28 Jul 2019 00:38:08 +0300</pubDate>
+      
+      <guid>https://sherrynotes.netlify.com/tags/big-o/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://sherrynotes.netlify.com/tags/python/</link>
+      <pubDate>Sun, 28 Jul 2019 00:38:08 +0300</pubDate>
+      
+      <guid>https://sherrynotes.netlify.com/tags/python/</guid>
       <description></description>
     </item>
     

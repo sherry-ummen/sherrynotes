@@ -3,30 +3,71 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.sherrynotes.netlify.com/2019/07/asymptotic-notations-boot-big-o-big-omega-big-theta/</loc>
+    <loc>https://sherrynotes.netlify.com/2019/07/nodejs-setup-vscode/</loc>
+    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sherrynotes.netlify.com/</loc>
+    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sherrynotes.netlify.com/posts/</loc>
+    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sherrynotes.netlify.com/tags/</loc>
+    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sherrynotes.netlify.com/tags/javascript/</loc>
+    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sherrynotes.netlify.com/tags/nodejs/</loc>
+    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sherrynotes.netlify.com/tags/vscode/</loc>
+    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sherrynotes.netlify.com/2019/07/asymptotic-notations-boot-big-o-big-omega-big-theta/</loc>
     <lastmod>2019-07-28T00:38:08+03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.sherrynotes.netlify.com/</loc>
+    <loc>https://sherrynotes.netlify.com/tags/algorithms/</loc>
     <lastmod>2019-07-28T00:38:08+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.sherrynotes.netlify.com/posts/</loc>
+    <loc>https://sherrynotes.netlify.com/tags/asymptotic/</loc>
     <lastmod>2019-07-28T00:38:08+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.sherrynotes.netlify.com/tags/</loc>
+    <loc>https://sherrynotes.netlify.com/tags/big-o/</loc>
     <lastmod>2019-07-28T00:38:08+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.sherrynotes.netlify.com/tags/algorithms-big-o-asymptotic-python/</loc>
+    <loc>https://sherrynotes.netlify.com/tags/python/</loc>
     <lastmod>2019-07-28T00:38:08+03:00</lastmod>
     <priority>0</priority>
   </url>

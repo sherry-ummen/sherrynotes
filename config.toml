@@ -1,4 +1,4 @@
-baseURL = "https://www.sherrynotes.netlify.com/"
+baseURL = "https://sherrynotes.netlify.com/"
 languageCode = "en-us"
 title = "Notes"
 theme = "ezhil"

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Nodejs Setup Vscode - Notes</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Nodejs Setup Vscode" />
+<meta property="og:description" content="VSCode settings needed to run NodeJS and Run tests" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sherrynotes.netlify.com/2019/07/nodejs-setup-vscode/" />
+<meta property="article:published_time" content="2019-07-28T00:47:12+03:00" />
+<meta property="article:modified_time" content="2019-07-28T00:47:12+03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Nodejs Setup Vscode"/>
+<meta name="twitter:description" content="VSCode settings needed to run NodeJS and Run tests"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title">Notes</h1>
+	<div class="site-description"><h2>Somethings about Software Development</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/sherry-ummen" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/sherryummen" title="Twitter"><i data-feather="twitter"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Nodejs Setup Vscode</h1>
+			<div class="meta">Posted at &mdash; Jul 28, 2019</div>
+		</div>
+
+		<div class="markdown">
+			
+
+<h1 id="vscode-settings-needed-to-run-nodejs-and-run-tests">VSCode settings needed to run NodeJS and Run tests</h1>
+
+<h2 id="vs-code-extensions-required">VS Code extensions required</h2>
+
+<ul>
+<li>npm</li>
+<li>npm intellisense</li>
+<li>bracket pair colorize 2</li>
+<li>eslint</li>
+<li>mocha</li>
+<li>import cost</li>
+</ul>
+
+<blockquote>
+<p>(Not necessary but if you like my editor style then)</p>
+</blockquote>
+
+<ul>
+<li>synthwave &lsquo;84</li>
+<li>vs code icons (seti)</li>
+</ul>
+
+<h2 id="steps">Steps</h2>
+
+<ul>
+<li><p>install latest version of nodejs</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install curl software-properties-common &amp;&amp;
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - &amp;&amp;
+sudo apt install -y nodejs</code></pre></div></li>
+
+<li><p><em>mkdir node-setup-example</em></p></li>
+
+<li><p><em>cd node-setup-example</em></p></li>
+
+<li><p><em>git init</em></p></li>
+
+<li><p><em>cd node-setup-example</em></p></li>
+
+<li><p><em>node init</em></p></li>
+
+<li><p>fill out as you like, I filled like the snapshot given below
+<img src="./node-init.png" alt="node init" /></p></li>
+
+<li><p><em>code .</em> (It will open visual studio code for current directory)</p></li>
+
+<li><p>folder stucture js/src</p></li>
+
+<li><p>create a file inside webDownloader.js</p></li>
+
+<li><p>add the code</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">function</span> print(message){
+console.log(<span style="color:#a31515">&#34;Hello World&#34;</span>)
+}
+</code></pre></div></li>
+
+<li><p>If you notice ESlint is not working because we have not installed ESlint.
+<img src="./eslint-not-working.png" alt="eslint-not-working" /></p></li>
+
+<li><p>lets install it</p></li>
+
+<li><p><em>npm install eslint &ndash;save-dev</em></p></li>
+
+<li><p><em>./node_modules/.bin/eslint &ndash;init</em></p></li>
+
+<li><p>Now you can see eslint is working and giving us the list of problems, you can click on the bulb and find the fix or edit it by your experienc.
+<img src="./webPageDownloader.js&amp;#32;-&amp;#32;node-setup-example&amp;#32;-&amp;#32;Visual&amp;#32;Studio&amp;#32;Code_021.png" alt="eslint-working" /></p></li>
+
+<li><p>Also I will disable jsdoc requirement, just to make things simple</p></li>
+
+<li><p>Now lets make the <em>npm start</em> command work, if you do it now by pressing F1 and type <em>npm start</em>, it will give error
+<strong>npm ERR! missing script: start</strong></p></li>
+
+<li><p>Create a file index.js on the root folder level</p></li>
+
+<li><p>Edit webpageDownloader.js to add</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">module.exports = {
+print,
+};
+</code></pre></div></li>
+
+<li><p>open index.js and add these lines</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">const</span> webPage = require(<span style="color:#a31515">&#39;./js/src/webPageDownloader&#39;</span>);
+webPage.print();
+</code></pre></div></li>
+
+<li><p>open package.json file</p></li>
+
+<li><p>add this line under scripts key</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#a31515">&#34;start&#34;</span><span style="">:</span> <span style="color:#a31515">&#34;node index.js&#34;</span></code></pre></div></li>
+
+<li><p>Mine looks something like this
+<img src="./Selection_023.png" alt="node start" /></p></li>
+
+<li><p>Now lets run <em>npm start</em>, so press F1 and type <em>npm start</em>, you should get the code run and display something like this (see the below terminal of the vscode)
+<img src="./index.js&amp;#32;-&amp;#32;node-setup-example&amp;#32;-&amp;#32;Visual&amp;#32;Studio&amp;#32;Code_022.png" alt="npm start run" /></p></li>
+
+<li><p>Now we have done a lot so lets commit these changes</p></li>
+
+<li><p>I am using git and I have added <strong>node_modules</strong> folder to the .gitignore file.</p></li>
+
+<li><p>Now lets add unit testing for the print function we have</p></li>
+
+<li><p>For this we need mocha, chai, sinon, sinon-chai, so lets install it</p></li>
+
+<li><p><em>npm install mocha &ndash;save-dev</em></p></li>
+
+<li><p><em>npm install chai &ndash;save-dev</em></p></li>
+
+<li><p><em>npm install sinon &ndash;save-dev</em></p></li>
+
+<li><p><em>npm install sinon-chai &ndash;save-dev</em></p></li>
+
+<li><p>Lets add a folder called <strong>tests</strong> at the root level and then create a file <strong>webPageDownloader.unit.test.js</strong></p></li>
+
+<li><p>Add the content of the file as</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#00f">const</span> webPage = require(<span style="color:#a31515">&#39;../js/src/webPageDownloader&#39;</span>);
+<span style="color:#00f">const</span> chai = require(<span style="color:#a31515">&#39;chai&#39;</span>);
+<span style="color:#00f">const</span> expect = chai.expect;
+<span style="color:#00f">const</span> sinon = require(<span style="color:#a31515">&#39;sinon&#39;</span>);
+<span style="color:#00f">const</span> sinonChai = require(<span style="color:#a31515">&#39;sinon-chai&#39;</span>);
+
+
+chai.use(sinonChai);
+
+beforeEach(() =&gt; {
+sinon.spy(console, <span style="color:#a31515">&#39;log&#39;</span>);
+});
+
+afterEach(() =&gt; {
+console.log.restore();
+});
+
+describe(<span style="color:#a31515">&#39;console log testing&#39;</span>, () =&gt; {
+it(<span style="color:#a31515">&#39;should log hello world&#39;</span>, () =&gt; {
+webPage.print();
+expect(console.log).to.have.been.calledWith(<span style="color:#a31515">&#39;Hello World&#39;</span>);
+});
+});
+</code></pre></div></li>
+</ul>
+
+<blockquote>
+<p>You can read more about unit testing nodejs app if you google about it, its beyond the scope of this article.</p>
+</blockquote>
+
+<ul>
+<li>Edit package.json to add the test command</li>
+<li>&ldquo;test&rdquo;: &ldquo;./node_modules/.bin/mocha &lsquo;tests/*.test.js&rsquo;&ldquo;,</li>
+<li>It should look like something like this
+<img src="./Selection_025.png" alt="test run config" /></li>
+<li>now press F1 and type <em>npm run test</em></li>
+<li>You should see your test executed and pass, like this
+<img src="./Selection_026.png" alt="test pass" /></li>
+<li>lets get our mocha side bar (vscode extension) working so that we can run individual test or set from VSCode.</li>
+<li>for mocha sider bar to discover our test files, we need to tell where to find the files. Go to VSCode File -&gt; Preferences -&gt; Settings</li>
+<li>Under Extensions find Mocha options and then change Mocha&gt;Files : Glob to *<strong>tests/*.test.js</strong>*</li>
+<li>Now select the Mocha sider bar icon which shoudl open a side bar pane, and click on refresh button which should list your unit test, select the test you want to run and click on the green button to execute the test.
+<img src="./mocha-sidebar.png" alt="mocha side bar" /></li>
+<li>If the test run successfully then you should see the test will have a green cicrlce beside it meaning it passes, you can try failign the test as well.</li>
+<li>Its time to commit the changes</li>
+<li>Now lets enable the code coverage, for that we would need another npm package istanbul. Lets install it
+<em>npm install istanbul &ndash;save-dev</em></li>
+<li>Also you would need to install nyc for the mocha side bar to work correctly
+<em>npm install nyc &ndash;save-dev</em></li>
+<li>After this all you have to is click on the umbrella icon on the mocha side bar and it will generate a nice report and also if you go to the webPageDownloader.js file you will see yellow like on the lines covered.
+<img src="./Selection_029.png" alt="code coverage lines" />
+*And at the bottom of vscode (status bar), you will the coverage percentage.
+<img src="./Selection_030.png" alt="code coverage status bar" /></li>
+<li>And the html report looks like this
+<img src="./Selection_032.png" alt="code coverage html" /></li>
+<li>Do not forget to put coverage and .nyc_output folder in .gitignore.</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<ul>
+<li>We say how to setup our IDE to look beautify</li>
+<li>We installed NoideJS and other required packages</li>
+<li>We wrote a small picece of code</li>
+<li>Added unit test</li>
+<li>Generated code coverage</li>
+</ul>
+
+		</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'sherryummen';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+<script>feather.replace()</script>
+</body>
+</html>

@@ -3,7 +3,7 @@ title: "Asymptotic Notations B(OOT) : Big-O, Big-Omega, Big-Theta"
 published: true
 date: 2019-07-28T00:38:08+03:00
 description: Defining the efficiency of an Algorithm
-tags: algorithms, big-o, asymptotic, python
+tags: [algorithms, big-o, asymptotic, python]
 ---
 
 When you write an algorithm or solve some computational problem you would often like to have an efficient working code. In normal language we would say its fast or slow or fast enough. Well the term is quote OK to use but to be quantitative we have notations which could be used here. These notation are called Asymptotic Notations. So to keep it simple these are notations to analyze an algorithm on how it performs when given a certain input.

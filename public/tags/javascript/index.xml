@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes</title>
-    <link>https://sherrynotes.netlify.com/</link>
-    <description>Recent content on Notes</description>
+    <title>javascript on Notes</title>
+    <link>https://sherrynotes.netlify.com/tags/javascript/</link>
+    <description>Recent content in javascript on Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 00:47:12 +0300</lastBuildDate>
     
-	<atom:link href="https://sherrynotes.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sherrynotes.netlify.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <description>VSCode settings needed to run NodeJS and Run tests VS Code extensions required  npm npm intellisense bracket pair colorize 2 eslint mocha import cost   (Not necessary but if you like my editor style then)
   synthwave &amp;lsquo;84 vs code icons (seti)  Steps  install latest version of nodejs
 sudo apt-get install curl software-properties-common &amp;amp;&amp;amp; curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - &amp;amp;&amp;amp; sudo apt install -y nodejs mkdir node-setup-example</description>
-    </item>
-    
-    <item>
-      <title>Asymptotic Notations B(OOT) : Big-O, Big-Omega, Big-Theta</title>
-      <link>https://sherrynotes.netlify.com/2019/07/asymptotic-notations-boot-big-o-big-omega-big-theta/</link>
-      <pubDate>Sun, 28 Jul 2019 00:38:08 +0300</pubDate>
-      
-      <guid>https://sherrynotes.netlify.com/2019/07/asymptotic-notations-boot-big-o-big-omega-big-theta/</guid>
-      <description>When you write an algorithm or solve some computational problem you would often like to have an efficient working code. In normal language we would say its fast or slow or fast enough. Well the term is quote OK to use but to be quantitative we have notations which could be used here. These notation are called Asymptotic Notations. So to keep it simple these are notations to analyze an algorithm on how it performs when given a certain input.</description>
     </item>
     
   </channel>
