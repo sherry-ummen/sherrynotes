@@ -6,10 +6,20 @@
     <description>Recent content on Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 01:57:14 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 02:17:29 +0300</lastBuildDate>
     
 	<atom:link href="https://sherrynotes.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About Me</title>
+      <link>https://sherrynotes.netlify.com/about/</link>
+      <pubDate>Sun, 28 Jul 2019 02:17:29 +0300</pubDate>
+      
+      <guid>https://sherrynotes.netlify.com/about/</guid>
+      <description> No idea what to fill in here. So here is me with my little one.
+ </description>
+    </item>
     
     <item>
       <title>Raspberrypi Headless Installation</title>
