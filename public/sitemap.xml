@@ -3,20 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://sherrynotes.netlify.com/2019/07/nodejs-setup-vscode/</loc>
-    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://sherrynotes.netlify.com/</loc>
-    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
+    <lastmod>2019-07-28T01:57:14+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sherrynotes.netlify.com/posts/</loc>
-    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
+    <lastmod>2019-07-28T01:57:14+03:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sherrynotes.netlify.com/2019/07/raspberrypi-headless-installation/</loc>
+    <lastmod>2019-07-28T01:57:14+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sherrynotes.netlify.com/2019/07/nodejs-setup-vscode/</loc>
+    <lastmod>2019-07-28T00:47:12+03:00</lastmod>
   </url>
   
   <url>

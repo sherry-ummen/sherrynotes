@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Raspberrypi Headless Installation - Notes</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Raspberrypi Headless Installation" />
+<meta property="og:description" content="Setting up Raspberry Pi (Connecting direct from laptop via Ethernet) - Headless Installation" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sherrynotes.netlify.com/2019/07/raspberrypi-headless-installation/" />
+<meta property="article:published_time" content="2019-07-28T01:57:14+03:00" />
+<meta property="article:modified_time" content="2019-07-28T01:57:14+03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Raspberrypi Headless Installation"/>
+<meta name="twitter:description" content="Setting up Raspberry Pi (Connecting direct from laptop via Ethernet) - Headless Installation"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title">Notes</h1>
+	<div class="site-description"><h2>Somethings about Software Development</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/sherry-ummen" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/sherryummen" title="Twitter"><i data-feather="twitter"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Raspberrypi Headless Installation</h1>
+			<div class="meta">Posted at &mdash; Jul 28, 2019</div>
+		</div>
+
+		<div class="markdown">
+			
+
+<h1 id="setting-up-raspberry-pi-connecting-direct-from-laptop-via-ethernet-headless-installation">Setting up Raspberry Pi (Connecting direct from laptop via Ethernet) - Headless Installation</h1>
+
+<h2 id="flashing-raspberry-pi">Flashing Raspberry Pi</h2>
+
+<ul>
+<li>First you need a micro sd card of minimum 8Gb space,with FAT format.</li>
+<li>Then you need a software to flash to the sd. In our case its <a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a>. Download the current platform image.</li>
+<li>Now lets download the latest image of raspian from here <a href="https://www.raspberrypi.org/downloads/raspbian/">https://www.raspberrypi.org/downloads/raspbian/</a>. I am using Raspbian Buster with desktop and recommended software.</li>
+<li>Unzip etcher and launch the app.</li>
+<li>Select the downloaded raspian zip file. Etcher shold select correct sd card, if not then select that. Then click Flash. You should see the following screen</li>
+</ul>
+
+<p><img src="./flashing.png" alt="flashing" /></p>
+
+<ul>
+<li><p>In my case I would like to have ssh to be enabled, so to do that you can create a ssh file in the sd card&rsquo;s boot partition. the file content does not matter just the file name ssh is enough. <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/">https://www.raspberrypi.org/documentation/remote-access/ssh/</a></p></li>
+
+<li><p>Unmount the sd card and pop it in the raspberrypi.</p></li>
+</ul>
+
+<h2 id="connecting-to-raspberry-pi">Connecting to Raspberry Pi</h2>
+
+<ul>
+<li>Now, these steps are important if you would like to avoid the hassle of having another monitor, keyboard, mouse to connect to the raspberrypi.</li>
+<li>Instead we will connect it just from the PC or laptop in my case, just by using the ethernet cable.
+&gt; Note: I am using Ubuntu and I will explain how to do it on ubuntu.</li>
+
+<li><p>First install the following tools net-tools and nmap.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install net-tools</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install nmap</code></pre></div></li>
+
+<li><p>Now edit your enthernet to be shared with other computers.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nm-connection-editor</code></pre></div>
+<p><img src="./network-connection.png" alt="network-connection" /></p></li>
+
+<li><p>select the ethernet connection and click on the settings button at the bottom of the window.</p></li>
+
+<li><p>select the IPv4 tab and set Method to be &ldquo;Shared to other computers&rdquo;
+<img src="./ipv4setting.png" alt="IPv4" /></p></li>
+
+<li><p>Press Save and reboot</p></li>
+
+<li><p>Now connect your raspberrypi with an ethernet cable and other end connect it directly to your laptop.</p></li>
+
+<li><p>run the following command to know your ethernet cnonnection name.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ifconfig</code></pre></div></li>
+
+<li><p>It will list you all connections configured. And find the ethernet connection name, in my* case its <em>eno1</em></p></li>
+
+<li><p>In the information of that ethernet search for the text Broadcast and the following ip text.</p></li>
+
+<li><p>You can also use the following command</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ifconfig eno1 | grep <span style="color:#a31515">&#34;broadcast&#34;</span> | awk -F: <span style="color:#a31515">&#39;{print $1}&#39;</span> | awk <span style="color:#a31515">&#39;{print $6}&#39;</span></code></pre></div></li>
+
+<li><p>In my case it was <strong><em>10.32.0.255</em></strong></p></li>
+
+<li><p>Now, lets find the ip of the raspberrypi to connect to (remember that its connected to your laptop via ethernet)</p></li>
+
+<li><p>Run the following command</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nmap -n -sP 10.32.0.255/24</code></pre></div></li>
+
+<li><p>It should return something like this</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Starting Nmap 7.60 ( https://nmap.org ) at 2019-07-26 15:43 EEST
+Nmap scan report for 10.32.0.1
+Host is up (0.00031s latency).
+Nmap scan report for 10.32.0.43
+Host is up (0.0014s latency).
+Nmap done: 256 IP addresses (2 hosts up) scanned in 2.81 seconds</pre></div></li>
+
+<li><p>The last ip is your raspberrypi ip.</p></li>
+
+<li><p>Lets use ssh to connect to it.</p></li>
+
+<li><p>ssh -Y pi@10.32.0.43</p></li>
+
+<li><p>What we are doing is that we are trying to login with user <em>pi</em></p></li>
+
+<li><p>Now it wil ask for password. Give <strong><em>raspberry</em></strong>. That is the default password.</p></li>
+
+<li><p>If everything is fine you shoudl see this</p></li>
+
+<li><p>pi@raspberrypi:~ $</p></li>
+
+<li><p>Now lets enable the possibily to see the raspian os ui from our laptop</p></li>
+
+<li><p>First lets enable VNC server</p></li>
+
+<li><p>You can read more here : <a href="https://www.realvnc.com/en/connect/docs/raspberry-pi.html#raspberry-pi-setup">https://www.realvnc.com/en/connect/docs/raspberry-pi.html#raspberry-pi-setup</a></p></li>
+
+<li><p>Run the following command</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get update</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install realvnc-vnc-server</code></pre></div></li>
+
+<li><p>Now lets make the service to be started at bootup</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl enable vncserver-x11-serviced.service</code></pre></div></li>
+
+<li><p>Choose option 1 and give password raspberry</p></li>
+
+<li><p>Now lets start the service</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl start vncserver-x11-serviced.service</code></pre></div></li>
+
+<li><p>Choose option 1 and give password raspberry</p></li>
+
+<li><p>Now in our laptop we have to install VNC viewer from here <a href="https://www.realvnc.com/en/connect/download/viewer/linux/">https://www.realvnc.com/en/connect/download/viewer/linux/</a> . Remeber to select DEB x64 if you are on ubuntu like me. Then click on download.</p></li>
+
+<li><p>Install it. And launch it.
+<img src="./vnc-viewer.png" alt="vnc-viewer" /></p></li>
+
+<li><p>Put the IP of the raspberrypi and press enter.</p></li>
+
+<li><p>It will ask for username and password.</p></li>
+
+<li><p>Username: pi and password: raspberry</p></li>
+
+<li><p>If everything is fine you should see the raspberrypi ui.
+<img src="./raspberry-ui.png" alt="raspberrypi" /></p></li>
+
+<li><p>Also, remeber to set the resolution correctly. In your raspberrypi, go to Menu -&gt; Preference -&gt; Raspberry Pi Confirguration.</p></li>
+
+<li><p>Under System tab press button Set resolution and set it accordingly.</p></li>
+
+<li><p>I hope this helps. If you have reached till here and everything works then you have done really good job!</p></li>
+</ul>
+
+		</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'sherryummen';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div><a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+<script>feather.replace()</script>
+</body>
+</html>

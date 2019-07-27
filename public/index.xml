@@ -6,10 +6,19 @@
     <description>Recent content on Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 00:47:12 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 01:57:14 +0300</lastBuildDate>
     
 	<atom:link href="https://sherrynotes.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Raspberrypi Headless Installation</title>
+      <link>https://sherrynotes.netlify.com/2019/07/raspberrypi-headless-installation/</link>
+      <pubDate>Sun, 28 Jul 2019 01:57:14 +0300</pubDate>
+      
+      <guid>https://sherrynotes.netlify.com/2019/07/raspberrypi-headless-installation/</guid>
+      <description>Setting up Raspberry Pi (Connecting direct from laptop via Ethernet) - Headless Installation Flashing Raspberry Pi  First you need a micro sd card of minimum 8Gb space,with FAT format. Then you need a software to flash to the sd. In our case its https://www.balena.io/etcher/. Download the current platform image. Now lets download the latest image of raspian from here https://www.raspberrypi.org/downloads/raspbian/. I am using Raspbian Buster with desktop and recommended software.</description>
+    </item>
     
     <item>
       <title>Nodejs Setup Vscode</title>
