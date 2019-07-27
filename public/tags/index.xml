@@ -6,26 +6,17 @@
     <description>Recent content in Tags on Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 00:38:08 +0300</lastBuildDate>
     
 	<atom:link href="https://www.sherrynotes.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>crap1</title>
-      <link>https://www.sherrynotes.netlify.com/tags/crap1/</link>
-      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      <title>algorithms, big-o, asymptotic, python</title>
+      <link>https://www.sherrynotes.netlify.com/tags/algorithms-big-o-asymptotic-python/</link>
+      <pubDate>Sun, 28 Jul 2019 00:38:08 +0300</pubDate>
       
-      <guid>https://www.sherrynotes.netlify.com/tags/crap1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>crap2</title>
-      <link>https://www.sherrynotes.netlify.com/tags/crap2/</link>
-      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.sherrynotes.netlify.com/tags/crap2/</guid>
+      <guid>https://www.sherrynotes.netlify.com/tags/algorithms-big-o-asymptotic-python/</guid>
       <description></description>
     </item>
     

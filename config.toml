@@ -55,3 +55,6 @@ url = "/index.xml"
 
 [taxonomies]
    tag = "tags"
+
+[permalinks]
+  posts = "/:year/:month/:title/"

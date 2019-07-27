@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes</title>
-    <link>https://www.sherrynotes.netlify.com/</link>
-    <description>Recent content on Notes</description>
+    <title>algorithms, big-o, asymptotic, python on Notes</title>
+    <link>https://www.sherrynotes.netlify.com/tags/algorithms-big-o-asymptotic-python/</link>
+    <description>Recent content in algorithms, big-o, asymptotic, python on Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 00:38:08 +0300</lastBuildDate>
     
-	<atom:link href="https://www.sherrynotes.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.sherrynotes.netlify.com/tags/algorithms-big-o-asymptotic-python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
