@@ -26,7 +26,8 @@
       <pubDate>Sun, 28 Jul 2019 00:47:12 +0300</pubDate>
       
       <guid>https://sherrynotes.netlify.com/2019/07/nodejs-setup-vscode/</guid>
-      <description>VSCode settings needed to run NodeJS and Run tests VS Code extensions required  npm npm intellisense bracket pair colorize 2 eslint mocha import cost   (Not necessary but if you like my editor style then)
+      <description>VSCode settings needed to run NodeJS and Run tests  Sample code here https://github.com/sherry-ummen/node-setup-example
+ VS Code extensions required  npm npm intellisense bracket pair colorize 2 eslint mocha import cost   (Not necessary but if you like my editor style then)
   synthwave &amp;lsquo;84 vs code icons (seti)  Steps  install latest version of nodejs
 sudo apt-get install curl software-properties-common &amp;amp;&amp;amp; curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - &amp;amp;&amp;amp; sudo apt install -y nodejs mkdir node-setup-example</description>
     </item>

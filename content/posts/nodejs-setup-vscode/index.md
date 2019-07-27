@@ -8,6 +8,8 @@ tags: [nodejs, javascript, vscode]
 
 # VSCode settings needed to run NodeJS and Run tests
 
+> Sample code here https://github.com/sherry-ummen/node-setup-example
+
 ## VS Code extensions required
 
 * npm
