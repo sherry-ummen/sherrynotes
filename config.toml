@@ -7,7 +7,10 @@ pygmentsstyle = "vs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+enableRobotsTXT = true
+
 disqusShortname = "sherryummen"
+googleAnalytics = "UA-144704780-1"
 
 [params]
 	subtitle = "Some things about Software Development"
@@ -58,3 +61,5 @@ url = "/index.xml"
 
 [permalinks]
   posts = "/:year/:month/:title/"
+
+ 
