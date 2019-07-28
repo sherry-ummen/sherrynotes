@@ -10,7 +10,7 @@ pygmentscodefencesguesssyntax = true
 disqusShortname = "sherryummen"
 
 [params]
-	subtitle = "Somethings about Software Development"
+	subtitle = "Some things about Software Development"
 	# Number of posts to show in recent posts list.
 	recentPostsCount = 10
 	# Content types which are excluded from recent posts and archive page.
