@@ -90,17 +90,21 @@
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install net-tools</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install nmap</code></pre></div></li>
 
 <li><p>Now edit your enthernet to be shared with other computers.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nm-connection-editor</code></pre></div>
-<p><img src="./network-connection.png" alt="network-connection" /></p></li>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nm-connection-editor</code></pre></div></li>
+</ul>
 
-<li><p>select the ethernet connection and click on the settings button at the bottom of the window.</p></li>
+<p><img src="./network-connection.png" alt="network-connection" /></p>
 
-<li><p>select the IPv4 tab and set Method to be &ldquo;Shared to other computers&rdquo;
-<img src="./ipv4setting.png" alt="IPv4" /></p></li>
+<ul>
+<li>select the ethernet connection and click on the settings button at the bottom of the window.</li>
+<li>select the IPv4 tab and set Method to be &ldquo;Shared to other computers&rdquo;</li>
+</ul>
 
-<li><p>Press Save and reboot</p></li>
+<p><img src="./ipv4setting.png" alt="IPv4" /></p>
 
-<li><p>Now connect your raspberrypi with an ethernet cable and other end connect it directly to your laptop.</p></li>
+<ul>
+<li>Press Save and reboot</li>
+<li>Now connect your raspberrypi with an ethernet cable and other end connect it directly to your laptop.</li>
 
 <li><p>run the following command to know your ethernet cnonnection name.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ifconfig</code></pre></div></li>
@@ -129,9 +133,8 @@ Nmap done: 256 IP addresses (2 hosts up) scanned in 2.81 seconds</pre></div></li
 
 <li><p>The last ip is your raspberrypi ip.</p></li>
 
-<li><p>Lets use ssh to connect to it.</p></li>
-
-<li><p>ssh -Y pi@10.32.0.43</p></li>
+<li><p>Lets use ssh to connect to it.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh -Y pi@10.32.0.43</code></pre></div></li>
 
 <li><p>What we are doing is that we are trying to login with user <em>pi</em></p></li>
 
@@ -162,23 +165,24 @@ Nmap done: 256 IP addresses (2 hosts up) scanned in 2.81 seconds</pre></div></li
 
 <li><p>Now in our laptop we have to install VNC viewer from here <a href="https://www.realvnc.com/en/connect/download/viewer/linux/">https://www.realvnc.com/en/connect/download/viewer/linux/</a> . Remeber to select DEB x64 if you are on ubuntu like me. Then click on download.</p></li>
 
-<li><p>Install it. And launch it.
-<img src="./vnc-viewer.png" alt="vnc-viewer" /></p></li>
+<li><p>Install it. And launch it.</p></li>
+</ul>
 
-<li><p>Put the IP of the raspberrypi and press enter.</p></li>
+<p><img src="./vnc-viewer.png" alt="vnc-viewer" /></p>
 
-<li><p>It will ask for username and password.</p></li>
+<ul>
+<li>Put the IP of the raspberrypi and press enter.</li>
+<li>It will ask for username and password.</li>
+<li>Username: pi and password: raspberry</li>
+<li>If everything is fine you should see the raspberrypi ui.</li>
+</ul>
 
-<li><p>Username: pi and password: raspberry</p></li>
+<p><img src="./raspberry-ui.png" alt="raspberrypi" /></p>
 
-<li><p>If everything is fine you should see the raspberrypi ui.
-<img src="./raspberry-ui.png" alt="raspberrypi" /></p></li>
-
-<li><p>Also, remeber to set the resolution correctly. In your raspberrypi, go to Menu -&gt; Preference -&gt; Raspberry Pi Confirguration.</p></li>
-
-<li><p>Under System tab press button Set resolution and set it accordingly.</p></li>
-
-<li><p>I hope this helps. If you have reached till here and everything works then you have done really good job!</p></li>
+<ul>
+<li>Also, remeber to set the resolution correctly. In your raspberrypi, go to Menu -&gt; Preference -&gt; Raspberry Pi Confirguration.</li>
+<li>Under System tab press button Set resolution and set it accordingly.</li>
+<li>I hope this helps. If you have reached till here and everything works then you have done really good job!</li>
 </ul>
 
 		</div><div id="disqus_thread"></div>
